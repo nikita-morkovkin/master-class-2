@@ -1,0 +1,86 @@
+.navigation-panel {
+  width: 100%;
+  height: 100px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+      margin-top: 41.5px;
+      margin-bottom: 41.5px;
+      margin-right: 420px;
+    }
+
+    &__buttons-group {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        font-family: var(--font-family), serif;
+        color: var(--violet-text-color);
+        font-weight: 600;
+        line-height: 77%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 100px;
+      }
+    }
+
+    &__search {
+      margin-left: 417px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-family: var(--font-family), serif;
+        color: var(--violet-text-color);
+        font-weight: 600;
+        line-height: 77%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 100px;
+      }
+
+      &__burger-button {
+        button {
+          background-color: var(--burger-button-color);
+          width: 49px;
+          height: 49px;
+          display: flex;
+          transition-duration: 0.3s;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          border-radius: 15%;
+        }
+        button:hover {
+          background-color: #dcc8c8;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
+}
