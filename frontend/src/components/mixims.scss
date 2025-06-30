@@ -22,3 +22,54 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
+@mixin services-arrow-button {
+  width: 55px;
+  height: 55px;
+  border: none;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 15%;
+}
+
+@mixin side-button($topSize: 0, $leftSize: 0) {
+  position: absolute;
+  top: $topSize;
+  left: $leftSize;
+  transform: translateY(-50%);
+
+  button {
+    @include services-arrow-button;
+
+    &:hover {
+      background-color: #d1d3d9;
+    }
+
+    &:active {
+      background-color: #edeff5;
+    }
+  }
+}
+
+@mixin services-container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin suptitle-button ($widthSize: 0, $heightSize: 0) {
+  font-family: var(--font-family), serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  width: $widthSize;
+  height: $heightSize;
+  transition-duration: 0.3s;
+}

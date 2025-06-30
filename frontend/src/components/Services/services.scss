@@ -1,3 +1,5 @@
+@import '../mixims';
+
 .services {
   position: relative;
 
@@ -5,39 +7,11 @@
     position: relative;
 
     &__button-left {
-      position: absolute;
-      top: 50%;
-      left: 40px;
-      transform: translateY(-50%);
-
-      button {
-        width: 55px;
-        height: 55px;
-        border: none;
-        transition-duration: 0.3s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10%;
-      }
+      @include side-button(50%, 40px);
     }
 
     &__button-right {
-      position: absolute;
-      top: 50%;
-      left: 95%;
-      transform: translateY(-50%);
-
-      button {
-        width: 55px;
-        height: 55px;
-        border: none;
-        transition-duration: 0.3s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10%;
-      }
+      @include side-button(50%, 95%);
     }
 
     &__group-elements {
@@ -48,12 +22,10 @@
 
       &__top-container {
         &__mini-title {
+          @include services-container-title;
           margin-bottom: 12px;
           width: 168px;
           height: 29px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           background-color: var(--orange-color);
           font-family: var(--font-family), serif;
           font-weight: 600;
@@ -68,9 +40,7 @@
 
       &__middle-container {
         &__title {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include services-container-title;
           background-color: white;
           font-family: var(--font10), serif;
           font-weight: 600;
@@ -89,9 +59,7 @@
         justify-content: flex-start;
 
         &__title {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include services-container-title;
           background-color: white;
           font-family: var(--font10), serif;
           font-weight: 600;
@@ -108,39 +76,32 @@
         margin-top: 28px;
 
         &__button1 {
-          font-family: var(--font-family), serif;
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 200%;
-          letter-spacing: 0.2em;
-          text-transform: uppercase;
+          @include suptitle-button(186px, 56px);
           color: white;
           background-color: var(--violet-color);
-          border-radius: 5px;
-          border: none;
-          width: 186px;
-          height: 56px;
-          transition-duration: 0.3s;
 
           &:hover {
             background-color: var(--violet-text-color);
           }
+
+          &:active {
+            background-color: #263fc5;
+          }
         }
 
         &__button2 {
-          font-family: var(--font-family), serif;
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 200%;
-          letter-spacing: 0.2em;
-          text-transform: uppercase;
+          @include suptitle-button(179px, 56px);
           color: var(--violet-text-color);
-          border-radius: 5px;
-          border: none;
-          width: 179px;
-          height: 56px;
-          transition-duration: 0.3s;
+          background-color: white;
           margin-left: 16px;
+
+          &:hover {
+            background-color: #f0f2f9;
+          }
+
+          &:active {
+            background-color: #e8eaf1;
+          }
         }
       }
     }

@@ -1,0 +1,87 @@
+.show-video-section {
+
+  &__container {
+    display: flex;
+
+    &__info {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 902px;
+      height: 706px;
+      background-color: #eef7ff;
+      padding: 177px 255px 0 235px;
+
+      &__title {
+        position: relative;
+        width: 470px;
+        font-family: var(--font10), serif;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 112%;
+        color: var(--violet-text-color);
+
+        &::before {
+          position: absolute;
+          top: -40px;
+          content: "dental practice";
+          font-family: var(--font-family), serif;
+          color: var(--orange-color);
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 192%;
+          letter-spacing: 0.13em;
+          text-transform: uppercase;
+        }
+      }
+
+      &__text {
+        font-family: var(--font-family), serif;
+        font-weight: 400;
+        width: 540px;
+        margin-top: 24px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 167%;
+        color: var(--grey-another-text-color);
+        margin-bottom: 7px;
+      }
+
+      &__subtext {
+        position: absolute;
+        left: 26%;
+        top: 63%;
+        font-family: var(--font10), serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 167%;
+        color: var(--orange-color);
+      }
+    }
+
+    &__video-player {
+      position: relative;
+
+      &__button {
+        position: absolute;
+        border-radius: 50%;
+        border: none;
+        width: 78px;
+        height: 78px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        transition-duration: 0.3s;
+
+        &:hover {
+          background-color: #e1e1e1;
+        }
+
+        &:active {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+}

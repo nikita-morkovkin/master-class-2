@@ -63,6 +63,10 @@
           background-color: #dcc8c8;
           transition-duration: 0.2s;
         }
+
+        button:active {
+          background-color: #f9e5e5;
+        }
       }
     }
   }
