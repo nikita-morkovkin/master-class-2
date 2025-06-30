@@ -1,0 +1,174 @@
+@import '../mixims';
+
+.about-work {
+  background-color: white;
+  padding: 150px 310px;
+
+  &__card-container {
+    display: flex;
+
+    &__card-item-1 {
+      width: 433px;
+      height: 556px;
+
+      &__title {
+        margin-top: 25px;
+        font-family: var(--font10), serif;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 130%;
+        color: var(--violet-text-color)
+      }
+
+      &__text {
+        margin-top: 16px;
+        font-family: var(--font-family), serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        color: var(--grey-text-color)
+      }
+
+      &__container {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+
+        &__link {
+          font-family: var(--font-family), serif;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 200%;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: var(--violet-text-color);
+          margin-right: 10px;
+          text-decoration: none;
+        }
+
+        &__button {
+          border-radius: 50%;
+          border: 2px dashed var(--violet-color);
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    &__card-item-2 {
+      width: 433px;
+      height: 556px;
+
+      ul {
+        margin-top: 40px;
+      }
+
+      li {
+        margin-top: 10px;
+        font-family: var(--font-family), serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        color: var(--grey-text-color);
+      }
+    }
+
+    &__card-item-3 {
+      position: relative;
+      background-color: var(--burger-button-color);
+      width: 433px;
+      height: 556px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__title {
+        margin-top: 48px;
+        font-family: var(--font10), serif;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 71%;
+        color: #1e2d78;
+        text-align: center;
+      }
+
+      &__list {
+        margin-top: 36px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        &__container {
+          display: flex;
+          margin-top: 19px;
+          justify-content: space-between;
+
+          &__text {
+            font-family: var(--font-family), serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 167%;
+            color: var(--grey-text-color);
+          }
+
+          &__tabs {
+            color: #d33;
+            margin-right: 23px;
+            margin-left: 22px;
+          }
+        }
+      }
+
+      &__button {
+        width: 100%;
+        height: 80px;
+        border: none;
+        background-color: var(--violet-color);
+
+        p {
+          font-family: var(--font10), serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 125%;
+          color: white;
+        }
+      }
+
+      &__button:hover {
+        background-color: var(--violet-text-color);
+        transition-duration: 0.3s;
+      }
+
+      .chat-bot-button {
+        position: absolute;
+        left: 140%;
+        top: 13%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: var(--chat-button-color);
+        color: white;
+        font-family: var(--font16), serif;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 0.04em;
+        border-radius: 13986px;
+        padding: 14px 21px 14px 22px;
+        width: 106px;
+        height: 49px;
+
+        p {
+          margin-left: 8px;
+        }
+      }
+
+      .chat-bot-button:hover {
+        background-color: #d72851;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}

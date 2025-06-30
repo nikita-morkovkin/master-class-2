@@ -1,3 +1,5 @@
+@import "../mixims";
+
 .header {
   width: 100%;
   height: 40px;
@@ -8,10 +10,7 @@
 
   &__time-text {
     display: flex;
-    font-family: var(--font-family), serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 167%;
+    @include header-font-properties;
     margin-left: 40px;
     margin-top: 9px;
     margin-bottom: 9px;
@@ -39,10 +38,7 @@
       a {
         text-decoration: none;
         color: white;
-        font-family: var(--font-family), serif;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 167%;
+        @include header-font-properties;
       }
     }
 
@@ -55,10 +51,7 @@
       a {
         text-decoration: none;
         color: white;
-        font-family: var(--font-family), serif;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 167%;
+        @include header-font-properties;
       }
     }
 
@@ -72,17 +65,8 @@
       address {
         margin-left: 19px;
         font-style: normal;
-        font-family: var(--font-family), serif;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 167%;
+        @include header-font-properties;
       }
     }
-  }
-}
-
-@media (max-width: 1060px) {
-  .header {
-    height: 70px;
   }
 }

@@ -128,6 +128,7 @@ svg * {
 }
 
 :root {
+  --chat-button-color: #EE2852;
   --violet-color: #2E3192;
   --burger-button-color: #FDEAEA;
   --orange-color: #F4572E;

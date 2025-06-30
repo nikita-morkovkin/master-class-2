@@ -1,0 +1,39 @@
+.list-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 142px;
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 75px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+      margin-right: 28px;
+    }
+
+    &__title {
+      font-family: var(--font10), serif;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 132%;
+      color: var(--violet-text-color);
+    }
+
+    &__text {
+      font-family: var(--font-family), serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 167%;
+      color: var(--grey-text-color);
+    }
+  }
+}

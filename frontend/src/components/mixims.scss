@@ -1,0 +1,24 @@
+@mixin header-font-properties() {
+  font-family: var(--font-family), serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 167%;
+}
+
+@mixin nav-panel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 100px;
+}
+
+@mixin nav-link-element {
+  text-decoration: none;
+  font-family: var(--font-family), serif;
+  color: var(--violet-text-color);
+  font-weight: 600;
+  line-height: 77%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
