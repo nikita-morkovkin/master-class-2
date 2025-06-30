@@ -3,7 +3,7 @@ import './services.scss'
 
 const Services: FC = (): JSX.Element => {
   return (
-    <div className={'services'}>
+    <section className={'services'}>
       <div className={'services__container'}>
         <img
           src="../../../public/pictures/Services.png"
@@ -65,7 +65,7 @@ const Services: FC = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

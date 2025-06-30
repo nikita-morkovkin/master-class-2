@@ -1,3 +1,5 @@
+@import "../mixims";
+
 .navigation-panel {
   width: 100%;
   height: 100px;
@@ -22,21 +24,11 @@
       display: flex;
 
       a {
-        text-decoration: none;
-        font-family: var(--font-family), serif;
-        color: var(--violet-text-color);
-        font-weight: 600;
-        line-height: 77%;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
+        @include nav-link-element;
       }
 
       &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 120px;
-        height: 100px;
+        @include nav-panel-button;
       }
     }
 
@@ -47,21 +39,11 @@
       align-items: center;
 
       a {
-        text-decoration: none;
-        font-family: var(--font-family), serif;
-        color: var(--violet-text-color);
-        font-weight: 600;
-        line-height: 77%;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
+        @include nav-link-element;
       }
 
       &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 120px;
-        height: 100px;
+        @include nav-panel-button;
       }
 
       &__burger-button {
@@ -76,6 +58,7 @@
           border: none;
           border-radius: 15%;
         }
+
         button:hover {
           background-color: #dcc8c8;
           transition-duration: 0.2s;
