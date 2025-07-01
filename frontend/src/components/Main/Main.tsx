@@ -4,6 +4,7 @@ import AboutWork from "../AboutWork/AboutWork.tsx";
 import ListIcons from "../ListIcons/ListIcons.tsx";
 import ShowVideo from "../ShowVideo/ShowVideo.tsx";
 import PeoplesReviews from "../PeoplesReviews/PeoplesReviews.tsx";
+import StockComponent from "../StockComponent/StockComponent.tsx";
 
 const Main: FC = (): JSX.Element => (
   <main>
@@ -12,6 +13,7 @@ const Main: FC = (): JSX.Element => (
     <ListIcons />
     <ShowVideo />
     <PeoplesReviews />
+    <StockComponent />
   </main>
 );
 

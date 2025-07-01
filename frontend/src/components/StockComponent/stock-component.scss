@@ -1,0 +1,63 @@
+.stock-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--violet-color);
+  width: 100%;
+  padding-bottom: 79px;
+  padding-top: 79px;
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__title {
+      color: white;
+      font-family: var(--font10), serif;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 126%;
+
+      span {
+        color: var(--orange-color)
+      }
+    }
+
+    &__text {
+      font-family: var(--font-family), serif;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 158%;
+      color: white;
+    }
+  }
+
+  &__button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 198px;
+    height: 56px;
+    margin-left: 383px;
+    transition-duration: 0.3s;
+    
+    span {
+      font-family: var(--font-family), serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 200%;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--violet-text-color);
+    }
+
+    &:hover {
+      background-color: #d5d5d5;
+    }
+
+    &:active {
+      background-color: #f2f2f2;
+    }
+  }
+}
