@@ -1,0 +1,108 @@
+.our-expects {
+  background-color: white;
+  padding-bottom: 95px;
+
+  &__text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 154px;
+
+    &__title {
+      font-family: var(--font10), serif;
+      font-weight: 600;
+      position: relative;
+      font-size: 52px;
+      line-height: 115%;
+      color: var(--violet-text-color);
+      
+      &::before {
+        position: absolute;
+        top: -25px;
+        left: 130px;
+        content: "the allsmiles team";
+        font-family: var(--font-family), serif;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 192%;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--orange-color);
+      }
+    }
+
+    &__text {
+      margin-top: 12px;
+      font-family: var(--font-family), serif;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 158%;
+      text-align: center;
+      color: var(--grey-text-color);
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+
+    &__card-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 288px;
+      height: 369px;
+      margin-right: 50px;
+
+
+      &__button {
+        border-radius: 4px;
+        padding: 4px 12px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        top: 8%;
+        left: -6%;
+        transition-duration: 0.2s;
+        position: absolute;
+        background-color: var(--violet-color);
+
+        &:hover {
+          background-color: #2b2e82;
+        }
+
+        &:active {
+          background-color: #5259d9;
+        }
+      }
+
+      &__text {
+        font-family: var(--font10), serif;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 132%;
+        text-align: center;
+        margin-top: 30px;
+        color: var(--violet-text-color);
+      }
+
+      &__suptext {
+        font-family: var(--font-family), serif;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 167%;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 5px;
+        color: var(--orange-color);
+      }
+    }
+  }
+}

@@ -105,9 +105,9 @@ const PeoplesReviews: FC = (): JSX.Element => {
       </div>
 
       <div className={'peoples-reviews__points-container'}>
-        <div className={'peoples-reviews__points-container__item'}></div>
-        <div className={'peoples-reviews__points-container__item'}></div>
-        <div className={'peoples-reviews__points-container__item'}></div>
+        <button className={'peoples-reviews__points-container__item'}></button>
+        <button className={'peoples-reviews__points-container__item'}></button>
+        <button className={'peoples-reviews__points-container__item'}></button>
       </div>
     </section>
   );

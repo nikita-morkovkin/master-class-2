@@ -6,6 +6,7 @@ import ShowVideo from "../ShowVideo/ShowVideo.tsx";
 import PeoplesReviews from "../PeoplesReviews/PeoplesReviews.tsx";
 import StockComponent from "../StockComponent/StockComponent.tsx";
 import AdsComponent from "../AdsComponent/AdsComponent.tsx";
+import OurExpects from "../OurExperts/OurExpects.tsx";
 
 const Main: FC = (): JSX.Element => (
   <main>
@@ -16,6 +17,7 @@ const Main: FC = (): JSX.Element => (
     <PeoplesReviews />
     <StockComponent />
     <AdsComponent />
+    <OurExpects />
   </main>
 );
 
