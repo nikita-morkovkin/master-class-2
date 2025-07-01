@@ -7,6 +7,7 @@ import PeoplesReviews from "../PeoplesReviews/PeoplesReviews.tsx";
 import StockComponent from "../StockComponent/StockComponent.tsx";
 import AdsComponent from "../AdsComponent/AdsComponent.tsx";
 import OurExpects from "../OurExperts/OurExpects.tsx";
+import FormComponent from "../FormComponent/FormComponent.tsx";
 
 const Main: FC = (): JSX.Element => (
   <main>
@@ -18,6 +19,7 @@ const Main: FC = (): JSX.Element => (
     <StockComponent />
     <AdsComponent />
     <OurExpects />
+    <FormComponent />
   </main>
 );
 

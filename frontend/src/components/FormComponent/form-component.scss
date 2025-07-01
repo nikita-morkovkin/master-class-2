@@ -1,0 +1,100 @@
+.form-component {
+  background-color: var(--bg-form-color);
+  position: relative;
+  display: flex;
+
+  &__image {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    left: 47.8%;
+  }
+
+  &__form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-left: 112px;
+    padding-right: 154px;
+    padding-top: 133px;
+
+
+    &__grid-container {
+      display: grid;
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+
+      &__input {
+        background-color: transparent;
+        border: 2px solid var(--input-border-color);
+        border-radius: 4px;
+        padding: 15px 22px;
+        width: 308px;
+        height: 50px;
+        font-family: var(--font-family), serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--grey-text-color);
+      }
+    }
+
+    &__text-area {
+      border: 2px solid var(--input-border-color);
+      border-radius: 4px;
+      width: 637px;
+      height: 98px;
+      background-color: transparent;
+      margin-top: 20px;
+    }
+
+    &__button {
+      border-radius: 5px;
+      padding: 16px 50px;
+      margin-top: 20px;
+      margin-bottom: 140px;
+      border: none;
+      background-color: var(--violet-color);
+      height: 56px;
+      font-family: var(--font-family), serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 200%;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+
+      &:hover {
+        background-color: #2b2e82;
+      }
+
+      &:active {
+        background-color: #5259d9;
+      }
+    }
+
+    &__title {
+      font-family: var(--font10), serif;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 126%;
+      margin-bottom: 10px;
+      color: var(--violet-text-color);
+    }
+
+    &__text {
+      font-family: var(--font-family), serif;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 158%;
+      color: var(--grey-another-text-color);
+      margin-bottom: 42px;
+    }
+  }
+}
