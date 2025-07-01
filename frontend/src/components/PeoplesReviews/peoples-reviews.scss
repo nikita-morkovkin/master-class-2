@@ -1,0 +1,143 @@
+@import '../mixims';
+
+.peoples-reviews {
+  position: relative;
+
+  &__points-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+    margin-bottom: 140px;
+
+    &__item:nth-child(1) {
+      background-color: var(--orange-color);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    &__item:nth-child(2) {
+      background-color: var(--pagination-button-color);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin-left: 17px;
+      margin-right: 17px;
+    }
+
+    &__item:nth-child(3) {
+      background-color: var(--violet-color);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  }
+
+  &__button-left {
+    @include peoples-reviews-arrow-button;
+    left: 6.5%;
+  }
+
+  &__button-right {
+    @include peoples-reviews-arrow-button;
+    left: 91%;
+  }
+
+  &__title {
+    font-family: var(--font10), serif;
+    font-weight: 600;
+    position: relative;
+    font-size: 52px;
+    line-height: 115%;
+    text-align: center;
+    color: var(--violet-text-color);
+    margin-top: 166px;
+
+    &::before {
+      content: "Our dear clients";
+      position: absolute;
+      top: -50%;
+      left: 45.5%;
+      font-family: var(--font-family), serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 192%;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--orange-color);
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family), serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    color: var(--grey-text-color);
+  }
+
+  &__card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 83px;
+
+    &__card-item {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 507px;
+      height: 380px;
+      position: relative;
+
+      &__score {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--violet-color);
+        color: white;
+        border-radius: 4px;
+        top: 6%;
+        left: 57%;
+      }
+
+      &__title {
+        font-family: var(--font10), serif;
+        font-weight: 600;
+        margin-top: 28px;
+        font-size: 27px;
+        line-height: 130%;
+        text-align: center;
+        color: #1e2d78;
+      }
+
+      &__text {
+        font-family: var(--font-family), serif;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 7px;
+        line-height: 167%;
+        text-align: center;
+        color: var(--grey-text-color);
+      }
+
+      &__suptext {
+        font-family: var(--font-family), serif;
+        font-weight: 600;
+        font-size: 13px;
+        margin-top: 29px;
+        line-height: 192%;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--orange-color);
+      }
+    }
+  }
+}

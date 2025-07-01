@@ -73,3 +73,25 @@
   height: $heightSize;
   transition-duration: 0.3s;
 }
+
+@mixin peoples-reviews-arrow-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  transition-duration: 0.3s;
+  top: 60%;
+
+  &:hover {
+    background-color: #e2e2e2;
+  }
+
+  &:active {
+    background-color: #f6f6f6;
+  }
+}
