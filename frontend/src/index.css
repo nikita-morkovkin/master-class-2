@@ -128,14 +128,17 @@ svg * {
 }
 
 :root {
+  --disable-line-color: #ffe1e1;
   --chat-button-color: #EE2852;
   --pagination-button-color: #cae3f9;
   --violet-color: #2E3192;
   --burger-button-color: #FDEAEA;
   --orange-color: #F4572E;
+  --enable-line-color: #d33;
   --violet-text-color: #1E2D78;
   --grey-text-color: #8A8A8A;
   --grey-another-text-color: #656565;
+  --bg-section-pink-color: #FFF2F2;
 
   --font-family: "Open Sans", sans-serif;
   --second-family: "Inter", sans-serif;

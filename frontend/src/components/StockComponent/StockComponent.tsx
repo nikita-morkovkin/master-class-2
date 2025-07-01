@@ -1,6 +1,7 @@
+import type {FC, JSX} from 'react';
 import './stock-component.scss';
 
-const StockComponent = () => {
+const StockComponent: FC = (): JSX.Element => {
   return (
     <section className={'stock-component'}>
       <div className={'stock-component-text-block'}>
