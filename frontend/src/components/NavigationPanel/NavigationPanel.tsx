@@ -7,7 +7,7 @@ const NavigationPanel: FC = (): JSX.Element => {
       <div className={'navigation-panel__content'}>
         <div className={'navigation-panel__content__logo'}>
           <img
-            src={'../../../public/pictures/logo.png'}
+            src={'../../../public/pictures/Logo.png'}
             alt="Company icon"
             width="135"
             height="17"

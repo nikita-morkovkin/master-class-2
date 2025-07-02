@@ -42,15 +42,6 @@ const FormComponent: FC = (): JSX.Element => {
         loading="lazy"
       />
 
-      <img
-        className={'form-component__decor'}
-        src="../../../public/icons/svg.png"
-        alt=""
-        width=""
-        height=""
-        loading="lazy"
-      />
-
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={'form-component__form-item'}
