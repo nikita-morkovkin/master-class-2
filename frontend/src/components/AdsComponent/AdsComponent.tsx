@@ -4,7 +4,7 @@ const AdsComponent = () => {
   return (
     <section className={'ads-component'}>
       <div className={'ads-component__menu'}>
-        <a href={'/'} className={'ads-component__menu__item current'}>
+        <a href={'/'} className={'ads-component__menu__item'}>
           <p>Root Canal Specialist</p>
         </a>
         <a href={'/'} className={'ads-component__menu__item'}>

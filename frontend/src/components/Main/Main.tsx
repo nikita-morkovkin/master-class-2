@@ -8,6 +8,7 @@ import StockComponent from "../StockComponent/StockComponent.tsx";
 import AdsComponent from "../AdsComponent/AdsComponent.tsx";
 import OurExpects from "../OurExperts/OurExpects.tsx";
 import FormComponent from "../FormComponent/FormComponent.tsx";
+import LatestNews from "../LatestNews/LatestNews.tsx";
 
 const Main: FC = (): JSX.Element => (
   <main>
@@ -20,6 +21,7 @@ const Main: FC = (): JSX.Element => (
     <AdsComponent />
     <OurExpects />
     <FormComponent />
+    <LatestNews />
   </main>
 );
 

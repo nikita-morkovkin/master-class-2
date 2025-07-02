@@ -16,7 +16,7 @@ const NavigationPanel: FC = (): JSX.Element => {
         </div>
         <div className={'navigation-panel__content__buttons-group'}>
           <a href={'/'}>
-            <div className={'navigation-panel__content__buttons-group__button'}>
+            <div className={'navigation-panel__content__buttons-group__button current'}>
               Home
             </div>
           </a>
@@ -48,7 +48,7 @@ const NavigationPanel: FC = (): JSX.Element => {
         </div>
         <div className={'navigation-panel__content__search'}>
             <a href={'/'}>
-              <div className={'navigation-panel__content__buttons-group__button'}>
+              <div className={'navigation-panel__content__buttons-group__button search'}>
                 Search
               </div>
             </a>

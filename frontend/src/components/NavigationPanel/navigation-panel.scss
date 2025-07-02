@@ -29,6 +29,19 @@
 
       &__button {
         @include nav-panel-button;
+        transition-duration: 0.3s;
+
+        &:not(:nth-child(1)) {
+          border-bottom: 2px solid white;
+        }
+
+        &:hover {
+          background-color: #e8e8e8;
+        }
+
+        &:active {
+          background-color: #f4f4f4;
+        }
       }
     }
 
@@ -69,5 +82,19 @@
         }
       }
     }
+  }
+}
+
+.current {
+  border-top: 2px solid var(--enable-line-color);
+}
+
+.search {
+  &:hover {
+    background-color: white;
+  }
+
+  &:active {
+    background-color: white;
   }
 }
