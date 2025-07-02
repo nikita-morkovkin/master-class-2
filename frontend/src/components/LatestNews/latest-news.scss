@@ -1,0 +1,116 @@
+.latest-news {
+  &__container {
+    &__title {
+      font-family: var(--font10), serif;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 115%;
+      text-align: center;
+      position: relative;
+      color: var(--violet-text-color);
+      margin-top: 154px;
+      margin-bottom: 16px;
+
+      &::before {
+        position: absolute;
+        content: "Dental Pracrice";
+        left: 46%;
+        top: -25px;
+        font-family: var(--font-family), serif;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 192%;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--orange-color);
+      }
+    }
+
+    &__text {
+      font-family: var(--font-family), serif;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 158%;
+      text-align: center;
+      color: var(--grey-text-color);
+    }
+
+    &__card-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+      margin-top: 64px;
+      margin-bottom: 115px;
+
+      &__card-item {
+        &__subtext {
+          font-family: var(--font-family), serif;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 192%;
+          letter-spacing: 0.13em;
+          text-transform: uppercase;
+          color: var(--orange-color);
+          margin-top: 31px;
+        }
+
+        &__title {
+          font-family: var(--font10), serif;
+          font-weight: 600;
+          font-size: 27px;
+          line-height: 130%;
+          color: var(--violet-text-color);
+          margin-top: 10px;
+        }
+
+        &__text {
+          font-family: var(--font-family), serif;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 167%;
+          color: var(--grey-text-color);
+          margin-top: 10px;
+        }
+
+        &__button-container {
+          display: flex;
+          align-items: center;
+          margin-top: 18px;
+
+          p {
+            font-family: var(--font-family), serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 200%;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--violet-text-color);
+          }
+
+          button {
+            border-radius: 50%;
+            border: 2px dashed var(--violet-color);
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 0.3s;
+            background-color: #dcdcdc;
+            margin-left: 13px;
+
+            &:hover {
+              background-color: #c3c3c3;
+            }
+
+            &:active {
+              background-color: #dcdcdc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
