@@ -51,6 +51,10 @@
       height: 98px;
       background-color: transparent;
       margin-top: 20px;
+      font-family: var(--font-family), serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: var(--grey-text-color);
     }
 
     &__button {
